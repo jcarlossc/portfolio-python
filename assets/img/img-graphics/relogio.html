@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relógio Analógico</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #1e1e2f;
+        margin: 0;
+      }
+
+      .clock {
+        width: 300px;
+        height: 300px;
+        border: 10px solid #FFD03F;
+        border-radius: 50%;
+        position: relative;
+        background: #2c3e50;
+        background-image: url(pythonsvg.svg);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .hand {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform-origin: bottom center;
+        background: #ecf0f1;
+        transform: rotate(90deg);
+      }
+
+      .hour {
+        width: 8px;
+        height: 70px;
+        background: #e74c3c;
+      }
+
+      .minute {
+        width: 6px;
+        height: 100px;
+        background: #3498db;
+      }
+
+      .second {
+        width: 2px;
+        height: 120px;
+        background: #2ecc71;
+      }
+
+      .center {
+        width: 12px;
+        height: 12px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 6px);
+        left: calc(50% - 6px);
+        z-index: 10;
+      }
+
+      .number {
+        font-size: 40px;
+        color: #FFD03F;
+      }
+      #i12 {
+        margin-left: 125px;
+      }
+      #i6 {
+        margin-left: 140px;
+        margin-top: 207px;
+      }
+      #i3 {
+        margin-left: 275px;
+        margin-top: -175px;
+      }
+      #i9 {
+        margin-left: 05px;
+        margin-top: -45px;
+      }
+      #i10 {
+        margin-left: 20px;
+        margin-top: -110px;
+      }
+      #i11 {
+        margin-left: 65px;
+        margin-top: -95px;
+      }
+      #i1 {
+        margin-left: 205px;
+        margin-top: -50px;
+      }
+      #i2 {
+        margin-left: 255px;
+        margin-top: 0px;
+      }
+      #i4 {
+        margin-left: 255px;
+        margin-top: 80px;
+      }
+      #i5 {
+        margin-left: 210px;
+        margin-top: 5px;
+      }
+      #i7 {
+        margin-left: 70px;
+        margin-top: -48px;
+      }
+      #i8 {
+        margin-left: 25px;
+        margin-top: -95px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="clock">
+      <div class="number" id="i12">12</div>
+      <div class="number" id="i6">6</div>
+      <div class="number" id="i3">3</div>
+      <div class="number" id="i9">9</div>
+      <div class="number" id="i10">10</div>
+      <div class="number" id="i11">11</div>
+      <div class="number" id="i1">1</div>
+      <div class="number" id="i2">2</div>
+      <div class="number" id="i4">4</div>
+      <div class="number" id="i5">5</div>
+      <div class="number" id="i7">7</div>
+      <div class="number" id="i8">8</div>
+      <div class="hand hour" id="hour"></div>
+      <div class="hand minute" id="minute"></div>
+      <div class="hand second" id="second"></div>
+      <div class="center"></div>
+    </div>
+
+    <script>
+      const hourHand = document.getElementById('hour');
+      const minuteHand = document.getElementById('minute');
+      const secondHand = document.getElementById('second');
+
+      function updateClock() {
+        const now = new Date();
+        const seconds = now.getSeconds();
+        const minutes = now.getMinutes();
+        const hours = now.getHours();
+
+        const secondDeg = seconds * 6;
+        const minuteDeg = minutes * 6 + seconds * 0.1;
+        const hourDeg = (hours % 12) * 30 + minutes * 0.5;
+
+        secondHand.style.transform = `rotate(${secondDeg}deg)`;
+        minuteHand.style.transform = `rotate(${minuteDeg}deg)`;
+        hourHand.style.transform = `rotate(${hourDeg}deg)`;
+      }
+
+      setInterval(updateClock, 1000);
+      updateClock(); // primeira chamada imediata
+    </script>
+  </body>
+</html>
