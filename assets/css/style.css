@@ -1,0 +1,95 @@
+:root {
+    --color-font: #212529;
+    --color-blue-python: #4989BB;
+    --color-white: #e0e0e0;
+    --color-yelow-python: #F6BA08;
+    --color-background-home: rgb(48, 47, 47);
+    --color-background-home1: rgb(71, 71, 71);
+    --height-page: 100vh;
+    --font-text-long: 1.4rem;
+    --font-text-title: 3rem;
+    --font-text-list: 1.2rem;
+    --subtitle-github: 1.1rem;
+}
+html body {
+    height: var(--height-page);
+    background-color: var(--color-background-home);
+}
+
+/* header */
+#twitter-png {
+    width: 50px;
+    margin-left: -10px;
+}
+#kaggle-svg {
+    width: 25px;
+    height: 25px;
+}
+#pdf-svg {
+    width: 30px;
+    margin-left: -10px;
+}
+.photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+#python {
+    color: var(--color-blue-python);
+}
+.align-menu {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#portfolio {
+    color: var(--color-yelow-python);
+}
+/* header-end */
+
+/* index */
+#text-title-home {
+    font-size: 2rem;
+    margin-top: 50px;
+    text-align: center;
+}
+#text-work-home {
+    font-size: 1.1rem;
+    margin-top: -12px;
+    color:  var(--color-yelow-python);
+    text-align: center;
+}
+#text-phrase-home {
+    margin-top: 80px;
+    font-size: 3.2rem;
+    text-align: center;
+}
+#image-home {
+    width: 15%;
+}
+#image-python-home {
+    margin: auto;
+}
+/* index-end */
+
+@media (max-width: 920px) {
+
+    /* index */
+    #text-title-home {
+        font-size: 2.5rem;
+    }
+    #text-work-home {
+        font-size: 1.5rem;
+    }
+    #text-phrase-home {
+        margin-top: 30px;
+        font-size: 3rem;
+    }     
+    #image-home {
+        width: 100%;
+    }
+    /* index-end */
+
+
+} 
