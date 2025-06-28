@@ -73,6 +73,25 @@ html body {
 }
 /* index-end */
 
+/* About */
+#photo-carlos {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.img-center {
+    margin-top: 50px;
+    text-align: center;
+}
+#text-phrase-about {
+    margin-top: 30px;
+    font-size: var(--font-text-long);
+}
+#about-background {
+    background-color: var(--color-background-home);
+}
+/* About-end */
+
 @media (max-width: 920px) {
 
     /* index */
