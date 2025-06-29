@@ -101,21 +101,18 @@ html body {
 /* graphics-end */
 
 /* graphic01 */
-#text-title-graphic01 {
+#text-title-graphic {
     font-size: var(--font-text-title);
 }
-#text-phrase-graphic01 {
+#text-phrase-graphic {
     font-size: var(--font-text-long);
 }
-#color-bnt-graphic01 {
+#color-bnt-graphic {
     background-color: var(--color-yelow-python);
 }
-#img-center-graphic01 {
+#img-graphic {
     margin-top: 70px;
-}
-#text-obs-graphic05 {
-    font-size: var(--font-text-long);
-    color: var(--color-yelow-python);
+    width: 100%;
 }
 /* graphic01-end */
 
