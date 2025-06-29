@@ -114,6 +114,10 @@ html body {
     margin-top: 70px;
     width: 100%;
 }
+#text-obs-graphic {
+    font-size: var(--font-text-long);
+    color: var(--color-yelow-python)
+}
 /* graphic01-end */
 
 /* About */
