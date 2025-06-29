@@ -116,7 +116,11 @@ html body {
 }
 #text-obs-graphic {
     font-size: var(--font-text-long);
-    color: var(--color-yelow-python)
+    color: var(--color-yelow-python);
+}
+#img-graphic-slide {
+    margin-top: 70px;
+    width: 100%;
 }
 /* graphic01-end */
 
@@ -182,6 +186,9 @@ html body {
     }
     #img-graphic {
         margin-top: -30px;
+    }
+    #img-graphic-slide {
+        margin-top: 0px;
     }
     /* graphic01-end */
 
