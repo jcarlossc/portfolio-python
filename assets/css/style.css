@@ -170,4 +170,15 @@ html body {
     }
     /* graphics-end */
 
+    /* graphic01 */
+    #text-title-graphic01 {
+        font-size: var(--font-text-title);
+        margin-top: -20px;
+        text-align: center;
+    }
+    #img-center-graphic01 {
+        margin-top: -40px;
+    }
+    /* graphic01-end */
+
 } 
