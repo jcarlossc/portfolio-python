@@ -100,6 +100,25 @@ html body {
 }
 /* graphics-end */
 
+/* graphic01 */
+#text-title-graphic01 {
+    font-size: var(--font-text-title);
+}
+#text-phrase-graphic01 {
+    font-size: var(--font-text-long);
+}
+#color-bnt-graphic01 {
+    background-color: var(--color-yelow-python);
+}
+#img-center-graphic01 {
+    margin-top: 70px;
+}
+#text-obs-graphic05 {
+    font-size: var(--font-text-long);
+    color: var(--color-yelow-python);
+}
+/* graphic01-end */
+
 /* About */
 #photo-carlos {
     width: 100px;
