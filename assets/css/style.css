@@ -73,6 +73,30 @@ html body {
 }
 /* index-end */
 
+/* projects */
+#text-title-projects {
+    font-size: var(--font-text-title);
+    margin-top: 50px;
+}
+#text-phrase-projects {
+    margin-top: 10px;
+    font-size: var(--font-text-long);
+}
+#list-projects {
+    margin-top: 70px;
+}
+#list-color {
+    background-color: var(--color-background-home);
+}
+#color-bnt {
+    background-color: var(--color-yelow-python);
+}
+.image-python-projects {
+    width: 25px;
+    margin-left: -10px;
+}
+/* projects-end */
+
 /*graphics */
 #text-title-graphic {
     font-size: var(--font-text-title);
@@ -160,6 +184,16 @@ html body {
         width: 100%;
     }
     /* index-end */
+
+    /* projects */
+    #text-title-projects {
+        margin-top: 20px;
+        text-align: center;
+    }
+    #list-projects {
+        margin-top: -30px;
+    }
+    /* projects-end */
 
     /*graphics */
     #text-title-graphic {
