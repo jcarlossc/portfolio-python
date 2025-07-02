@@ -1,35 +1,8 @@
-# Define arquivos de texto com fim de linha LF (Unix) — boa prática para JS
-*.js     text eol=lf
-*.jsx    text eol=lf
-*.ts     text eol=lf
-*.tsx    text eol=lf
-*.json   text eol=lf
-*.html   text eol=lf
-*.css    text eol=lf
-*.md     text eol=lf
+# Ignora arquivos HTML, CSS e JS da contagem de linguagens
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+*.js linguist-detectable=false
 
-# Configura arquivos para serem tratados como texto
-*.yml    text
-*.yaml   text
-*.env    text
+# Ignora toda uma pasta
+/public linguist-detectable=false
 
-# Trata arquivos de configuração como texto
-*.eslintrc     text
-*.prettierrc   text
-*.babelrc      text
-
-# Força tratamento binário (evita corrupção)
-*.png    binary
-*.jpg    binary
-*.jpeg   binary
-*.gif    binary
-*.ico    binary
-*.woff   binary
-*.woff2  binary
-*.ttf    binary
-*.eot    binary
-*.mp4    binary
-*.mp3    binary
-
-# Linguagem primária para stats do GitHub (opcional)
-* linguist-language=JavaScript
