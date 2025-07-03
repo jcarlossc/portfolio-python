@@ -148,6 +148,27 @@ html body {
 }
 /* graphic01-end */
 
+/* skills */
+#title-skills {
+    font-size: var(--font-text-title);
+}
+#title-card-skills {
+    font-size:var(--font-text-long);
+}
+#card-top-skills {
+    background-color: var(--color-background-home);
+}   
+.image-skills {
+    margin-left: 25px; 
+    width: 30px;
+}                     
+#card-width-height {
+    width:80px;
+    height: 40px;
+    display: inline-block;
+}
+/* skills-end */
+
 /* About */
 #photo-carlos {
     width: 100px;
